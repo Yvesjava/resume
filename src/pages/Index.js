@@ -5,27 +5,20 @@ import Main from '../layouts/Main';
 
 const Index = () => (
   <Main
-    description={"Michael D'Angelo's personal website. New York based Stanford ICME graduate, "
-    + 'VP of Engineering at Smile Identity, co-founder of Arthena and Matroid, and YC Alumni.'}
+    description="全建誉的个人网站. 精通java、php、mysql、vue。"
   >
     <article className="post" id="index">
       <header>
         <div className="title">
-          <h2><Link to="/">About this site</Link></h2>
+          <h2><Link to="/">全建誉</Link></h2>
           <p>
-            A beautiful, responsive, statically-generated,
-            react application written with modern Javascript.
+            善良、有责任心、幽默、风趣
           </p>
         </div>
       </header>
-      <p> Welcome to my website. Please feel free to read more <Link to="/about">about me</Link>,
-        or you can check out my {' '}
-        <Link to="/resume">resume</Link>, {' '}
-        <Link to="/projects">projects</Link>, {' '}
-        view <Link to="/stats">site statistics</Link>, {' '}
-        or <Link to="/contact">contact</Link> me.
+      <p> 欢迎来到我的网站。 请随时阅读<Link to="/about">关于我</Link>的更多信息，或者您可以查看我的<Link to="/resume">简历</Link> {' '}、<Link to="/projects">项目</Link> {' '}、查看<Link to="/stats">网站统计数据</Link> {' '}或<Link to="/contact">与我联系</Link>。
       </p>
-      <p> Source available <a href="https://github.com/mldangelo/personal-site">here</a>.</p>
+      {/* <p> 源码 <a href="https://github.com/mldangelo/personal-site">here</a>.</p> */}
     </article>
   </Main>
 );
