@@ -13,11 +13,11 @@ const Contact = () => (
     <article className="post" id="contact">
       <header>
         <div className="title">
-          <h2><Link to="/contact">Contact</Link></h2>
+          <h2><Link to="/contact">联系我</Link></h2>
         </div>
       </header>
       <div className="email-at">
-        <p>Feel free to get in touch. You can email me at: </p>
+        <p>随时与我联系，您可以发邮件给我： </p>
         <EmailLink />
       </div>
       <ContactIcons />

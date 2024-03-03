@@ -12,7 +12,7 @@ const Index = () => (
         <div className="title">
           <h2><Link to="/">全建誉</Link></h2>
           <p>
-            善良、有责任心、幽默、风趣
+            有责任心、善良、幽默、风趣
           </p>
         </div>
       </header>

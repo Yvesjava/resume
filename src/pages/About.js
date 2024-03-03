@@ -16,9 +16,9 @@ const About = () => {
       });
   });
 
-  const count = markdown.split(/\s+/)
-    .map((s) => s.replace(/\W/g, ''))
-    .filter((s) => s.length).length;
+  // const count = markdown.split(/\s+/)
+  //   .map((s) => s.replace(/\W/g, ''))
+  //   .filter((s) => s.length).length;
 
   return (
     <Main
@@ -28,8 +28,8 @@ const About = () => {
       <article className="post markdown" id="about">
         <header>
           <div className="title">
-            <h2><Link to="/about">About Me</Link></h2>
-            <p>(in about {count} words)</p>
+            <h2><Link to="/about">关于我</Link></h2>
+            {/* <p>(in about {count} words)</p> */}
           </div>
         </header>
         <Markdown>

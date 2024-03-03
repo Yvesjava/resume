@@ -5,7 +5,7 @@ import CategoryButton from './Skills/CategoryButton';
 import SkillBar from './Skills/SkillBar';
 
 const Skills = ({ skills, categories }) => {
-  const initialButtons = Object.fromEntries([['All', false]].concat(categories.map(({ name }) => [name, false])));
+  const initialButtons = Object.fromEntries([['全部', false]].concat(categories.map(({ name }) => [name, false])));
 
   const [buttons, setButtons] = useState(initialButtons);
 
@@ -16,7 +16,7 @@ const Skills = ({ skills, categories }) => {
       [key]: (label === key) && !buttons[key],
     }), {});
     // Turn on 'All' button if other buttons are off
-    newButtons.All = !Object.keys(buttons).some((key) => newButtons[key]);
+    newButtons.全部 = !Object.keys(buttons).some((key) => newButtons[key]);
     setButtons(newButtons);
   };
 
@@ -24,7 +24,7 @@ const Skills = ({ skills, categories }) => {
     // search for true active categories
     const actCat = Object.keys(buttons).reduce((cat, key) => (
       buttons[key] ? key : cat
-    ), 'All');
+    ), '全部');
 
     const comparator = (a, b) => {
       let ret = 0;
@@ -37,7 +37,7 @@ const Skills = ({ skills, categories }) => {
       return ret;
     };
 
-    return skills.sort(comparator).filter((skill) => (actCat === 'All' || skill.category.includes(actCat)))
+    return skills.sort(comparator).filter((skill) => (actCat === '全部' || skill.category.includes(actCat)))
       .map((skill) => (
         <SkillBar
           categories={categories}
@@ -60,10 +60,10 @@ const Skills = ({ skills, categories }) => {
     <div className="skills">
       <div className="link-to" id="skills" />
       <div className="title">
-        <h3>Skills</h3>
-        <p>Note: I think these sections are silly, but everyone seems to have one.
-          Here is a *mostly* honest overview of my skills.
-        </p>
+        <h3>技能</h3>
+        {/* <p>Note: I think these sections are silly, but everyone seems to have one. */}
+        {/*  Here is a *mostly* honest overview of my skills. */}
+        {/* </p> */}
       </div>
       <div className="skill-button-container">
         {getButtons()}

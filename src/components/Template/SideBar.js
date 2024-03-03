@@ -19,7 +19,7 @@ const SideBar = () => (
 
     <section className="blurb">
       <h2>关于</h2>
-      <p>嗨，我是全建誉。 我是2012年大专毕业，电子商务专业。此前，我曾担任<a href="http://www.kmdmall.com/" target="_blank" rel="noreferrer">客满多科技</a>的技术主管。
+      <p>嗨，我是全建誉。 我是2012年大专毕业，电子商务专业。此前，我曾担任<a href="http://www.kmdmall.com/" target="_blank" rel="noreferrer">客满多科技</a>的技术主管。6年开发经验，可全栈开发。
       </p>
       <ul className="actions">
         <li>

@@ -6,8 +6,9 @@ const Cell = ({ data }) => (
   <div className="cell-container">
     <article className="mini-post">
       <header>
-        <h3><a href={data.link}>{data.title}</a></h3>
-        <time className="published">{dayjs(data.date).format('MMMM, YYYY')}</time>
+        <h2><a href={data.link} target="_blank" rel="noreferrer">{data.title}</a></h2>
+        <h6>{data.subtitle}</h6>
+        <time className="published">{dayjs(data.date).format('YYYY年MM月')}</time>
       </header>
       <a href={data.link} className="image">
         <img src={`${process.env.PUBLIC_URL}${data.image}`} alt={data.title} />
@@ -22,6 +23,7 @@ const Cell = ({ data }) => (
 Cell.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string,
     link: PropTypes.string,
     image: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
